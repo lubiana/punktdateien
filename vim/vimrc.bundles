@@ -8,16 +8,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
-Bundle 'croaky/vim-colors-github'
 Bundle 'danro/rename.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nanki/treetop.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'scroolose/nerdtree'
-Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
@@ -25,5 +22,7 @@ Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
-
+Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
+Bundle 'digitaltoad/vim-jade'
+Bundle 'wavded/vim-stylus'
 filetype on
