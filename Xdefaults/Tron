@@ -1,0 +1,54 @@
+! -----------------------------------------------
+!  Tron Theme
+! file:     ~/.Xresources
+! author:   Aaron "ninjaaron" Christianson
+! modified: November 2011
+! -----------------------------------------------
+
+! color scheme
+*background: #101010
+*foreground: #88ddff
+! Black + DarkGrey
+*color0:  #334444
+*color8:  #496666
+! Red
+*color1:  #FF8855
+*color9:  #FF956F 
+! Green
+*color2:  #5EFFaf
+*color10: #aaffcc
+! Yellow
+*color3:  #FFFF77
+*color11: #FFFFA9
+! Blue
+*color4:  #5eAAFF
+*color12: #99ccFF
+! Mangenta
+*color5:  #ff8888
+*color13: #ff99bb
+! Cyan
+*color6:  #55ffff
+*color14: #AAFFFF
+! LightGrey + White
+*color7:  #FFFFee
+*color15: #ffffff
+
+URxvt.perl-ext:      default,url-select
+URxvt.keysym.M-u:    perl:url-select:select_next
+URxvt.urlLauncher:   firefox
+URxvt.underlineURLs: true
+URxvt.scrollBar: off
+
+!URxvt.font: xft:bitbuntufull
+
+URxvt.transparent: true
+URxvt.shading: 103
+URxvt.tintColor: #1e1e1e
+
+URxvt.keysym.M-0x35: command:\033]710;-*-5thElement-*\007
+URxvt.keysym.M-0x37: command:\033]710;-*-bitocra7-*\007
+URxvt.keysym.M-0x31: command:\033]710;xft:bitocrafull\007
+URxvt.keysym.M-0x33: command:\033]710;xft:bitocra13\007
+URxvt.keysym.M-0x30: command:\033]710;xft:bitbuntufull\007
+URxvt.keysym.M-0x32: command:\033]710;-*-fixed-medium-r-*-*-12-*\007
+
