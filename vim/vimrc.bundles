@@ -13,7 +13,6 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nanki/treetop.vim'
 Bundle 'scrooloose/syntastic'
-Bundle 'scroolose/nerdtree'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
@@ -25,4 +24,5 @@ Bundle 'xenoterracide/html.vim'
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 Bundle 'digitaltoad/vim-jade'
 Bundle 'wavded/vim-stylus'
+Bundle 'vim-scripts/CSApprox'
 filetype on
