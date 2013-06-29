@@ -39,7 +39,7 @@ URxvt.urlLauncher:   firefox
 URxvt.underlineURLs: true
 URxvt.scrollBar: off
 
-!URxvt.font: xft:bitbuntufull
+URxvt.font: xft:Source Code Pro:size=9
 
 URxvt.transparent: true
 URxvt.shading: 103
