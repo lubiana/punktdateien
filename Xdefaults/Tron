@@ -41,10 +41,6 @@ URxvt.scrollBar: off
 
 URxvt.font: xft:Source Code Pro:size=9:antialias=true:hinting=true
 
-URxvt.transparent: true
-URxvt.shading: 103
-URxvt.tintColor: #1e1e1e
-
 URxvt.keysym.M-0x35: command:\033]710;-*-5thElement-*\007
 URxvt.keysym.M-0x37: command:\033]710;-*-bitocra7-*\007
 URxvt.keysym.M-0x31: command:\033]710;xft:bitocrafull\007
