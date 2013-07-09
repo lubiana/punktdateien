@@ -51,9 +51,6 @@ plugins=(git tmux archlinux)
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
-
-export TERM=rxvt-unicode
-
 export GOPATH=$HOME/.bin/go
 
 # Customize to your needs...
