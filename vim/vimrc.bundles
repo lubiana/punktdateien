@@ -19,6 +19,7 @@ Bundle 'gmarik/vundle'
 " Snippets & Autocomplete
   Bundle 'ervandew/supertab' 
   Bundle 'garbas/vim-snipmate'
+  Bundle 'tomtom/tlib_vim'
   Bundle 'honza/vim-snippets'
   Bundle 'Shougo/neocomplcache'
   Bundle 'Shougo/neosnippet'
