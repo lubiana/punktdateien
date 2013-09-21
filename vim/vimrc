@@ -11,11 +11,7 @@ set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-endif
+syntax on
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -63,8 +59,6 @@ let g:html_indent_tags = 'li\|p'
 " Set syntax highlighting for specific file types
 au BufRead,BufNewFile *.md set filetype=markdown
 
-" Enable spellchecking for Markdown
-au BufRead,BufNewFile *.md setlocal spell
 
 " Automatically wrap at 80 characters for Markdown
 au BufRead,BufNewFile *.md setlocal textwidth=80
@@ -81,6 +75,11 @@ nnoremap <C-l> <C-w>l
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
+
+set wildmenu
+set t_Co=256
+set background=dark
+colorscheme Darkside
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
