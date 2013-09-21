@@ -13,7 +13,7 @@ if &term =~ '^screen'
   execute "set <xRight>=\e[1;*C"
   execute "set <xLeft>=\e[1;*D"
 endif
-
+set wildmenu
 set t_Co=256 
 set background=dark
-colorscheme Peacock
+colorscheme Darkside

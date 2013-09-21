@@ -11,31 +11,19 @@ Bundle 'gmarik/vundle'
 " Base
   Bundle 'kien/ctrlp.vim'
   Bundle 'scrooloose/syntastic'
-"  Bundle 'scrooloose/nerdtree'
+  Bundle 'scrooloose/nerdtree'
   Bundle 'bling/vim-airline'
   Bundle 'tpope/vim-surround'
   Bundle 'myusuf3/numbers.vim'
   Bundle 'nathanaelkane/vim-indent-guides'
 " Snippets & Autocomplete
   Bundle 'ervandew/supertab' 
-"  Bundle 'garbas/vim-snipmate'
-"  Bundle 'tomtom/tlib_vim'
-"  Bundle 'honza/vim-snippets'
-"  Bundle 'Shougo/neocomplcache'
-"  Bundle 'Shougo/neosnippet'
-"  Bundle 'honza/vim-snippets' 
-"  Bundle 'MarcWeber/vim-addon-mw-utils'
 " Colors 
   Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 " Langs
-  Bundle 'kchmck/vim-coffee-script'
   Bundle 'tpope/vim-haml'
   Bundle 'tpope/vim-markdown'
-  Bundle 'tpope/vim-surround'
   Bundle 'xenoterracide/html.vim'
-  Bundle 'digitaltoad/vim-jade'
-  Bundle 'wavded/vim-stylus'
   Bundle 'spf13/PIV'
-  Bundle 'arnaud-lb/vim-php-namespace'
 
 filetype on

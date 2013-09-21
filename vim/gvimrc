@@ -7,4 +7,6 @@ set guioptions-=T
 " Use console dialogs
 set guioptions+=c
 
-colorscheme Laravel
+colorscheme Darkside
+set novisualbell
+set guifont=Source\ Code\ Pro
