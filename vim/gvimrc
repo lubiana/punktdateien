@@ -3,6 +3,8 @@ set vb
 
 " No toolbar
 set guioptions-=T
+set guioptions-=m
+set guioptions-=r
 
 " Use console dialogs
 set guioptions+=c
