@@ -14,14 +14,15 @@ alias v="vim --servername remote --remote-tab"
 alias vv="vim --servername remote"
 alias gv="gvim --servername remote"
 alias doch='sudo $(fc -ln -1)'
-alias tmux='tmux -2'
-alias ta='tmux attach'
+alias tm='tmux -2'
+alias ta='tmux a'
+alias fixscreen="sudo setpci -s 00:02.0 f4.b=FF"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+ DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how often before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -56,3 +57,6 @@ export LANG=en_US.UTF-8
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
 export PATH=$PATH:~/bin/screens
 
+alias such=git
+alias very=git
+alias wow='git status' 
