@@ -15,7 +15,7 @@ alias vv="vim --servername remote"
 alias gv="gvim --servername remote"
 alias doch='sudo $(fc -ln -1)'
 alias tm='tmux -2'
-alias ta='tmux a'
+alias ta='tmux -2 a'
 alias fixscreen="sudo setpci -s 00:02.0 f4.b=FF"
 
 # Set to this to use case-sensitive completion
@@ -55,7 +55,7 @@ export LANG=en_US.UTF-8
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
-export PATH=$PATH:~/bin/screens
+export PATH=$PATH:~/bin/screenlayout
 
 alias such=git
 alias very=git
