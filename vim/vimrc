@@ -79,6 +79,10 @@ set t_Co=256
 set background=dark
 colorscheme Darkside
 
+if has('autocmd')
+  au BufRead,BufNewFile *.txt set wm=2 tw=80
+endif
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
