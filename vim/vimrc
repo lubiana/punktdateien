@@ -78,10 +78,9 @@ set wildmenu
 set t_Co=256
 set background=dark
 colorscheme Darkside
+set wm=2
+set tw=80
 
-if has('autocmd')
-  au BufRead,BufNewFile *.txt set wm=2 tw=80
-endif
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
