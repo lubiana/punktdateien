@@ -14,8 +14,7 @@ alias v="vim --servername remote --remote-tab"
 alias vv="vim --servername remote"
 alias gv="gvim --servername remote"
 alias doch='sudo $(fc -ln -1)'
-alias tm='tmux -2'
-alias ta='tmux -2 a'
+alias ttmux='tmux -2 a || tmux -2'
 alias fixscreen="sudo setpci -s 00:02.0 f4.b=FF"
 
 # Set to this to use case-sensitive completion

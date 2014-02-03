@@ -25,5 +25,6 @@ Bundle 'gmarik/vundle'
   Bundle 'tpope/vim-markdown'
   Bundle 'xenoterracide/html.vim'
   Bundle 'spf13/PIV'
+  Bundle 'dsolstad/vim-wombat256i'
 
 filetype on
