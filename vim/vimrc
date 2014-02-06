@@ -35,8 +35,8 @@ augroup vimrcEx
 augroup END
 
 " Softtabs, 2 spaces
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 
@@ -56,10 +56,6 @@ let g:html_indent_tags = 'li\|p'
 
 " Set syntax highlighting for specific file types
 au BufRead,BufNewFile *.md set filetype=markdown
-
-
-" Automatically wrap at 80 characters for Markdown
-au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
