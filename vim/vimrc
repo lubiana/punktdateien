@@ -56,6 +56,7 @@ let g:html_indent_tags = 'li\|p'
 
 " Set syntax highlighting for specific file types
 au BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile   *.sass set ts=2
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
@@ -76,6 +77,11 @@ set background=dark
 colorscheme wombat256i 
 set wm=2
 set tw=80
+
+function SwitchBuffer()
+    b#
+endfunction
+nmap <Tab> :call SwitchBuffer()<CR>
 
 
 " Local config

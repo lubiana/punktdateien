@@ -16,15 +16,12 @@ Bundle 'gmarik/vundle'
   Bundle 'tpope/vim-surround'
   Bundle 'myusuf3/numbers.vim'
   Bundle 'nathanaelkane/vim-indent-guides'
-" Snippets & Autocomplete
-  Bundle 'ervandew/supertab' 
 " Colors 
   Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 " Langs
   Bundle 'tpope/vim-haml'
   Bundle 'tpope/vim-markdown'
   Bundle 'xenoterracide/html.vim'
-  Bundle 'spf13/PIV'
   Bundle 'dsolstad/vim-wombat256i'
 
 filetype on
