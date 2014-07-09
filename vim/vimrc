@@ -65,8 +65,8 @@ set wildmenu
 set t_Co=256
 set background=dark
 set tw=80
-
-set colorscheme wombat256i
+colorscheme wombat256i
+syntax on
 
 function SwitchBuffer()
     b#
