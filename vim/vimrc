@@ -1,3 +1,17 @@
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
 " Leader
 let mapleader = " "
 
@@ -11,28 +25,7 @@ set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 
-syntax on
 
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
-
-filetype plugin indent on
-
-augroup vimrcEx
-  au!
-
-  " For all text files set 'textwidth' to 78 characters.
-"  autocmd FileType text setlocal textwidth=78
-
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it for commit messages, when the position is invalid, or when
-  " inside an event handler (happens when dropping a file on gvim).
-"  autocmd BufReadPost *
-"    \ if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$") |
-"    \   exe "normal g`\"" |
-"    \ endif
-augroup END
 
 " Softtabs, 2 spaces
 set tabstop=4
@@ -56,7 +49,6 @@ let g:html_indent_tags = 'li\|p'
 
 " Set syntax highlighting for specific file types
 au BufRead,BufNewFile *.md set filetype=markdown
-autocmd BufRead,BufNewFile   *.sass set ts=2
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
@@ -68,15 +60,13 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" configure syntastic syntax checking to check on open as well as save
-let g:syntastic_check_on_open=1
 
 set wildmenu
 set t_Co=256
 set background=dark
-colorscheme wombat256i 
-set wm=2
 set tw=80
+
+set colorscheme wombat256i
 
 function SwitchBuffer()
     b#

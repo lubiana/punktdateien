@@ -1,27 +1,12 @@
-set nocompatible
-
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
-
-" Define bundles via Github repos
-" Base
-  Bundle 'kien/ctrlp.vim'
-  Bundle 'scrooloose/syntastic'
-  Bundle 'scrooloose/nerdtree'
-  Bundle 'bling/vim-airline'
-  Bundle 'tpope/vim-surround'
-  Bundle 'myusuf3/numbers.vim'
-  Bundle 'nathanaelkane/vim-indent-guides'
-" Colors 
-  Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
-" Langs
-  Bundle 'tpope/vim-haml'
-  Bundle 'tpope/vim-markdown'
-  Bundle 'xenoterracide/html.vim'
-  Bundle 'dsolstad/vim-wombat256i'
-
-filetype on
+Plugin 'gmarik/vundle'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-surround'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-markdown'
+Plugin 'xenoterracide/html.vim'
+Plugin 'dsolstad/vim-wombat256i'
