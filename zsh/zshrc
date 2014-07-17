@@ -46,7 +46,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git archlinux tmux)
+plugins=(git debian common-aliases laravel4)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,3 +60,5 @@ alias such=git
 alias very=git
 alias much=git
 alias wow='git status' 
+alias wgetr='wget -r --no-parent --reject "index.html*"'
+alias ssocks='export SOCKS_SERVER=127.0.0.1:1234'
