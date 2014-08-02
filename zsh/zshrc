@@ -48,7 +48,7 @@ export LANG=en_US.UTF-8
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
-export PATH=$PATH:~/bin/screenlayout
+export PATH=$PATH:~/bin/scripts
 
 alias such=git
 alias very=git
