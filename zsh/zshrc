@@ -49,6 +49,8 @@ export LANG=en_US.UTF-8
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
 export PATH=$PATH:~/bin/scripts
+export PATH=$PATH:~/bin/netbeans/bin
+export PATH=$PATH:~/bin/komodo/bin
 
 alias such=git
 alias very=git
