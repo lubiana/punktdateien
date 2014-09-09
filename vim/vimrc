@@ -14,7 +14,7 @@ filetype plugin indent on    " required
 
 
 " Leader
-let mapleader = " "
+let mapleader = "\\"
 
 set history=50
 set ruler         " show the cursor position all the time
@@ -36,8 +36,9 @@ set autoindent " always set autoindenting on
 set copyindent " copy the previous indentation on autoindenting
 
 " Numbers
-set number
-set numberwidth=5
+set number              " Enables Numbers
+set numberwidth=5       " fixed numberwidth
+set relativenumber      " displays numbers relatively
 
 " Swap files out of the project root
 set backupdir=~/.vim/backup//
@@ -87,7 +88,7 @@ colorscheme wombat256
 syntax on
 
 function SwitchBuffer()
-    b#
+    b!#
 endfunction
 nmap <Tab> :call SwitchBuffer()<CR>
 
