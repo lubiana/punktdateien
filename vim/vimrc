@@ -70,20 +70,30 @@ nnoremap <C-l> <C-w>l
 
 " Toggle NERDTree
 map <F2> :NERDTreeToggle<CR>
-" Toggle Tagbar (needs: apt-get install exuberant-ctags)
-nmap <F3> :TagbarToggle<CR>
+nmap <F3> :call BarToggle()<CR>
+
+" Function to toggle between tagbar and nerdtree
+" Tagbar needs: apt-get install exuberant-ctags
+function BarToggle()
+    NERDTreeToggle
+    TagbarToggle
+endfunction
 
 set wildmenu
 set t_Co=256
 set background=dark
 set tw=80
-colorscheme wombat256i
+colorscheme wombat256
 syntax on
 
 function SwitchBuffer()
     b#
 endfunction
 nmap <Tab> :call SwitchBuffer()<CR>
+
+" colorscheme toggle
+nnoremap <silent> <F9> :exec "color " .
+    \ ((g:colors_name == "wombat256") ? "Tomorrow" : "wombat256")<CR>
 
 " set space to toggle folds
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
