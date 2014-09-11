@@ -94,11 +94,8 @@ nnoremap <silent> <F9> :exec "color " .
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
-autocmd VimEnter * NERDTree
-autocmd BufEnter * NERDTreeMirror
-autocmd VimEnter * wincmd w
-let g:NERDTreeWinSize = 20 
-let g:tagbar_width = 20
+let g:NERDTreeWinSize = 30 
+let g:tagbar_width = 30
 let g:tagbar_autoclose = 1
 
 "set listchars=tab:>\ ,eol:$
