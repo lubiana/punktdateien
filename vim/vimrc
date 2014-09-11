@@ -70,15 +70,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " Toggle NERDTree
-map <F2> :NERDTreeToggle<CR>
-nmap <F3> :call BarToggle()<CR>
-
-" Function to toggle between tagbar and nerdtree
-" Tagbar needs: apt-get install exuberant-ctags
-function BarToggle()
-    NERDTreeToggle
-    TagbarToggle
-endfunction
+map <F2> :marks<CR>
+map <F3> :NERDTreeToggle<CR>
+map <F4> :TagbarToggle<CR>
 
 set wildmenu
 set t_Co=256
@@ -100,7 +94,16 @@ nnoremap <silent> <F9> :exec "color " .
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
+autocmd VimEnter * wincmd w
+let g:NERDTreeWinSize = 20 
+let g:tagbar_width = 20
+let g:tagbar_autoclose = 1
 
+"set listchars=tab:>\ ,eol:$
+"set listchars=tab:▸\ ,eol:¬
+nnoremap <F8> :set list!<CR>
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local

@@ -57,6 +57,7 @@ alias such=git
 alias very=git
 alias much=git
 alias wow='git status' 
+alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
 alias wgetr='wget -r --no-parent --reject "index.html*"'
 alias ssocks='export SOCKS_SERVER=127.0.0.1:1234'
 alias v="vim --servername remote --remote-tab"
