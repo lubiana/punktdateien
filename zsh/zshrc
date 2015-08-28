@@ -1,65 +1,23 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
-
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME="evan"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable bi-weekly auto-update checks
- DISABLE_AUTO_UPDATE="true"
-
-# Uncomment to change how often before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want to disable command autocorrection
-# DISABLE_CORRECTION="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
-
-# Uncomment following line if you want to disable marking untracked files under
-# VCS as dirty. This makes repository status check for large repositories much,
-# much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git debian common-aliases laravel4)
-
-source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
 
 # Customize to your needs...
-export PATH=$PATH:~/bin/netbeans/bin
-export PATH=$PATH:~/bin/komodo/bin
-export PATH=$PATH:~/.composer/vendor/bin
+TERM=xterm
 
 alias such=git
 alias very=git
 alias much=git
 alias wow='git status' 
 alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
-alias wgetr='wget -r --no-parent --reject "index.html*"'
+alias wgetr='wget --no-check-certificate -r --no-parent --reject "index.html*"'
 alias ssocks='export SOCKS_SERVER=127.0.0.1:1234'
 alias v="vim --servername remote --remote-tab"
 alias vv="vim --servername remote"
 alias gv="gvim --servername remote"
 alias doch='sudo $(fc -ln -1)'
 alias ttmux='tmux -2 a || tmux -2'
+alias composer="sudo docker run --rm -i -t -v \$PWD:/srv composer"
+alias php-dev="sudo docker run -i -t -P -v \$PWD:/srv php"
