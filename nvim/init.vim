@@ -1,6 +1,6 @@
 call plug#begin('~/.nvim/plugged')
 
-if filereadable(expand("~/.vimrc.bundles"))
+if filereadable(expand("~/.config/nvim/bundles.vim"))
   source ~/.config/nvim/bundles.vim
 endif
 call plug#end()
@@ -25,9 +25,8 @@ set backspace=indent,eol,start " allow backspacing over everything in insert mod
 set autoindent " always set autoindenting on
 set copyindent " copy the previous indentation on autoindenting
 set wildmenu "show wildmenu
-set t_Co=256
-set background=dark
-"set tw=80
+set t_Co=256 "fix for bad colors
+set background=dark " let vim know i use a dark background
 colorscheme Monokai 
 
 syntax on
@@ -38,10 +37,10 @@ set numberwidth=5       " fixed numberwidth
 set relativenumber      " displays numbers relatively
 
 " Swap files out of the project root
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
+set backupdir=~/.nvim/backup//
+set directory=~/.nvim/swap//
 
-" Get off my lawn
+" Force me to use hjkl
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
@@ -71,17 +70,14 @@ map <F4> :TagbarToggle<CR>
 nnoremap <silent> <F9> :exec "color " .
     \ ((g:colors_name == "Tomorrow") ? "Monokai" : "Tomorrow")<CR>
 
-
+" use tab to switch between buffers
 function SwitchBuffer()
     b!#
 endfunction
 nmap <Tab> :call SwitchBuffer()<CR>
 
 
-" set space to toggle folds
-nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-vnoremap <Space> zf
-
+" limit size of nerdtree and tagbar
 let g:NERDTreeWinSize = 30 
 let g:tagbar_width = 30
 let g:tagbar_autoclose = 1
@@ -92,12 +88,3 @@ nnoremap <F8> :set list!<CR>
 
 " Disable mouse!!
 set mouse=
-
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-
