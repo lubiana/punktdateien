@@ -27,7 +27,7 @@ set copyindent " copy the previous indentation on autoindenting
 set wildmenu "show wildmenu
 set t_Co=256
 set background=dark
-set tw=80
+"set tw=80
 colorscheme Tomorrow 
 
 syntax on
@@ -86,8 +86,8 @@ let g:NERDTreeWinSize = 30
 let g:tagbar_width = 30
 let g:tagbar_autoclose = 1
 
-"set listchars=tab:>\ ,eol:$
-"set listchars=tab:▸\ ,eol:¬
+set listchars=tab:>\ ,eol:$
+set listchars=tab:▸\ ,eol:¬
 nnoremap <F8> :set list!<CR>
 
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
