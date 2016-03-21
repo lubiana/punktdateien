@@ -27,9 +27,9 @@ set copyindent " copy the previous indentation on autoindenting
 set wildmenu "show wildmenu
 set t_Co=256 "fix for bad colors
 set background=dark " let vim know i use a dark background
-colorscheme Monokai 
 
 syntax on
+colorscheme Monokai 
 
 " Numbers
 set number              " Enables Numbers
@@ -76,6 +76,11 @@ function SwitchBuffer()
 endfunction
 nmap <Tab> :call SwitchBuffer()<CR>
 
+" show buffers in powerline
+let g:airline#extensions#tabline#enabled = 1
+
+" enable powerline font
+let g:airline_powerline_fonts = 1 
 
 " limit size of nerdtree and tagbar
 let g:NERDTreeWinSize = 30 
