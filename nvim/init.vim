@@ -29,7 +29,7 @@ set t_Co=256 "fix for bad colors
 set background=dark " let vim know i use a dark background
 
 syntax on
-colorscheme Monokai 
+colorscheme github
 
 " Numbers
 set number              " Enables Numbers
@@ -54,10 +54,14 @@ set splitbelow
 set splitright
 
 " Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+:tnoremap <A-h> <C-\><C-n><C-w>h
+:tnoremap <A-j> <C-\><C-n><C-w>j
+:tnoremap <A-k> <C-\><C-n><C-w>k
+:tnoremap <A-l> <C-\><C-n><C-w>l
+:nnoremap <A-h> <C-w>h
+:nnoremap <A-j> <C-w>j
+:nnoremap <A-k> <C-w>k
+:nnoremap <A-l> <C-w>l
 
 "Toggle Marks
 map <F2> :marks<CR>
@@ -68,7 +72,7 @@ map <F4> :TagbarToggle<CR>
 
 " colorscheme toggle
 nnoremap <silent> <F9> :exec "color " .
-    \ ((g:colors_name == "Tomorrow") ? "Monokai" : "Tomorrow")<CR>
+    \ ((g:colors_name == "github") ? "Monokai" : "github")<CR>
 
 " use tab to switch between buffers
 function SwitchBuffer()
@@ -87,8 +91,8 @@ let g:NERDTreeWinSize = 30
 let g:tagbar_width = 30
 let g:tagbar_autoclose = 1
 
-set listchars=tab:>\ ,eol:$
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:>\ ,eol:$,trail:~
+set listchars=tab:▸\ ,eol:¬,trail:«
 nnoremap <F8> :set list!<CR>
 
 " Disable mouse!!
