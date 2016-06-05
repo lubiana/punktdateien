@@ -7,6 +7,8 @@ export LANG=en_US.UTF-8
 # Customize to your needs...
 TERM=xterm
 
+export GOPATH=~/golang/gopath
+
 alias such=git
 alias very=git
 alias much=git
