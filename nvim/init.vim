@@ -95,5 +95,11 @@ set listchars=tab:>\ ,eol:$,trail:~
 set listchars=tab:▸\ ,eol:¬,trail:«
 nnoremap <F8> :set list!<CR>
 
+let $PATH=$PATH . ':' . expand('~/.config/composer/vendor/bin')
+let g:padawan#composer_command = "/usr/bin/composer"
+
+command! StartPadawan call deoplete#sources#padawan#StartServer()
+command! StopPadawan call deoplete#sources#padawan#StopServer()
+command! RestartPadawan call deoplete#sources#padawan#RestartServer()
 " Disable mouse!!
 set mouse=

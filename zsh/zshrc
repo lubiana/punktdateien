@@ -1,25 +1,25 @@
-ZSH_THEME="robbyrussel"
+#ZSH_THEME="robbyrussel"
 
 COMPLETION_WAITING_DOTS="true"
 
 export LANG=en_US.UTF-8
+export PATH="$PATH:/home/lubiana/.config/composer/vendor/bin"
+export VISUAL="nvim"
 
 # Customize to your needs...
-TERM=xterm
+#TERM=xterm
 
-export GOPATH=~/golang/gopath
-
+# stolen from:
+# https://twitter.com/chris__martin/status/420992421673988096
 alias such=git
 alias very=git
 alias much=git
 alias wow='git status' 
 alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
-alias wgetr='wget --no-check-certificate -r --no-parent --reject "index.html*"'
-alias ssocks='export SOCKS_SERVER=127.0.0.1:1234'
-alias v="vim --servername remote --remote-tab"
-alias vv="vim --servername remote"
-alias gv="gvim --servername remote"
+alias vim='nvim'
+
+# stolen from:
+# https://twitter.com/hanshuebner/status/319910203346808832
 alias doch='sudo $(fc -ln -1)'
-alias ttmux='tmux -2 a || tmux -2'
-alias composer="sudo docker run --rm -i -t -v \$PWD:/srv composer"
-alias php-dev="sudo docker run -i -t -P -v \$PWD:/srv php"
+. /etc/profile.d/vte.sh
+

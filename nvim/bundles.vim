@@ -9,6 +9,6 @@ Plug 'flazz/vim-colorschemes'
 Plug 'kshenoy/vim-signature'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Townk/vim-autoclose'
-Plug 'Valloric/YouCompleteMe'
 Plug 'jakobwesthoff/whitespacetrail'
-Plug 'shawncplus/phpcomplete.vim'
+Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'pbogut/deoplete-padawan'
